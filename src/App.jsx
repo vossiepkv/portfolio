@@ -1,6 +1,9 @@
 // App.jsx
 import { useState } from 'react'
 import icon from './assets/icon.png'
+import Linkdin from './assets/3.png'
+import Github from './assets/2.png'
+import Leetcode from './assets/1.png'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline';
 import './App.css'
@@ -38,17 +41,27 @@ function App() {
 
       <div className="hero-section">
         <div className="hero-content">
-          {/* Hero Text */}
+          {/* Hero Text with Social Icons and Button */}
           <div className='Hero'>
-            <p className='firstHero'>Web Developer</p>
-            <p className='secondHero'>Bug Hunter</p>
-            <p className='thirdHero'>API Whisperer</p>
+            <div className="hero-text">
+            <p className='firstHero'>Frontend Dev</p>
+            <p className='secondHero'>Backend Dev</p>
+            <p className='thirdHero'>Bug Hunter</p>
           </div>
-
-          {/* Image - moved inside hero-content */}
-          <div className='image'>
-        <img src={icon} alt="icon"/>
+            
+            <div className="social-icons">
+              <img className='git' src={Github} alt="Github" />
+              <img className='link' src={Linkdin} alt="LinkedIn" />
+              <img className='leet' src={Leetcode} alt="LeetCode" />
       </div>
+
+            <button className="contact-btn">Contact Me</button>
+        </div>
+
+          {/* Image */}
+          <div className='image'>
+            <img src={icon} alt="icon"/>
+          </div>
         </div>
 
         {/* Spline Background */}
