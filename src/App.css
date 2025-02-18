@@ -328,6 +328,13 @@
   padding-bottom: 2rem;
 }
 
+.location {
+  color: grey;
+  font-family: 'Nunito Sans';
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
 hr {
   width: 80%;
   margin: 2rem auto;
@@ -390,6 +397,7 @@ margin-top: 2rem;
   font-size: 3rem;
   font-family: 'Nunito Sans';
   margin: 0 !important;
+  text-decoration: none;
 }
 
 
@@ -481,6 +489,10 @@ margin-top: 2rem;
   margin-top: 2rem;
 }
 
+.tech-badges-hiro{
+  padding-left: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .project-desc-hiro {
     padding: 1rem;
@@ -498,3 +510,42 @@ margin-top: 2rem;
   }
 }
 
+/* In App.css */
+.git-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #629584;
+  font-family: 'Nunito Sans';
+  margin: 2rem auto;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.git-more:hover {
+  color: #4a7164; /* Color change on hover */
+}
+
+.git-more img {
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.git-more:hover img {
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+.git-more p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+.edu-header{
+  color: #629584;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Nunito Sans';
+}
