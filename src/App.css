@@ -11,7 +11,7 @@
 
 /* Header Styles */
 .header {
-  color: rgb(226, 241, 231);
+  color: #629584 ;
   font-size: 2.5rem;
   font-family: 'Nunito Sans';
   font-weight: bolder;
@@ -326,5 +326,175 @@
 .git, .link, .leet {
   padding-right: 2rem;
   padding-bottom: 2rem;
+}
+
+hr {
+  width: 80%;
+  margin: 2rem auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #629584,
+    transparent
+  );
+}
+
+.project-head {
+  color: #629584;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Nunito Sans';
+}
+
+/* New/Updated Project Styles */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.project-image-hiro img{
+height: 400px;
+width: 200px;
+padding-left: 20rem;
+margin-top: 2rem;
+
+}
+
+.project-image-car img {
+  flex: 1;
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-desc-car {
+  flex: 1;
+  min-width: 300px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.car-title {
+  color: #629584;
+  font-size: 3rem;
+  font-family: 'Nunito Sans';
+  margin: 0 !important;
+}
+
+
+
+.car-desc {
+  color: #E2F1E7;
+  font-size: 1.2rem;
+  font-family: 'Nunito Sans';
+  line-height: 1.6;
+}
+
+.project-image-hiro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-image-hiro img {
+  height: 400px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-desc-hiro {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .project-image-car img,
+  .project-image-hiro img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-desc-car,
+  .project-desc-hiro {
+    padding: 1rem;
+  }
+}
+
+/* Add/update these styles in your App.css */
+
+.project-desc-hiro {
+  flex: 1;
+  min-width: 300px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.hiro-title {
+  color: #629584;
+  font-size: 3rem;
+  font-family: 'Nunito Sans';
+  margin: 0 !important;
+  padding-left: 2rem;
+}
+
+.hiro-desc {
+  color: #E2F1E7;
+  font-size: 1.2rem;
+  font-family: 'Nunito Sans';
+  line-height: 1.6;
+  padding-left: 2rem;
+}
+
+.project-image-hiro {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-image-hiro img {
+  height: 400px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-left: 18rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-desc-hiro {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-image-hiro {
+    justify-content: center;
+  }
+
+  .project-image-hiro img {
+    width: 100%;
+    height: auto;
+
+  }
 }
 
