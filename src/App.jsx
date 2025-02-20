@@ -39,7 +39,7 @@ function App() {
           <ul>
             <li><a href='#projects' onClick={() => setIsNavOpen(false)}>Projects</a></li>
             <li><a href='#education' onClick={() => setIsNavOpen(false)}>Education</a></li>
-            <li><a href='#about' onClick={() => setIsNavOpen(false)}>About Me</a></li>
+            <li><a href='#contact-me' onClick={() => setIsNavOpen(false)}>About Me</a></li>
           </ul>
         </nav>
       </div>
@@ -74,7 +74,9 @@ function App() {
           </FadeIn>
 
           <FadeIn duration={700}>
+            <link to ='#contact-me'>
             <button className="contact-btn animation-pulse">Contact Me</button>
+            </link>
             </FadeIn>
         </div>
 
@@ -168,7 +170,7 @@ function App() {
 
       {/* Education */}
 
-    <div className='edu-header'>
+    <div className='edu-header' id='education'>
     <FadeIn duration={300}>
       <p>Education</p>
       </FadeIn>
@@ -246,7 +248,7 @@ Currently, I’m working on 24/7 Cars, a car enthusiast social media service, wh
   </div>
 
   <FadeIn duration={600}>
-  <form className="contact-form" action='https://formspree.io/f/mnnjwawq' method='POST'>
+  <form className="contact-form" id='contact-me' action='https://formspree.io/f/mnnjwawq' method='POST'>
     <label htmlFor="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your Name" required />
 
