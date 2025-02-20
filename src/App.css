@@ -85,7 +85,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   height: 900px;
-  width: 1890px;
+  width: 100vw;
   margin: 0 auto;
   gap: 2rem;
 }
