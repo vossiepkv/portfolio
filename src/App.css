@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+html, body {
+  height: 100%;
+}
 
 /* Header and Nav Wrapper */
 .header-nav-wrapper {
@@ -25,8 +28,12 @@
 .nav-bar {
   background-color: rgb(56 116 120 / 0.5);
   padding: 1rem 2rem;
+  margin-right: 2rem;
   border-radius: 3rem;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 23rem;
 }
 
 .nav-bar ul {
@@ -39,7 +46,7 @@
 
 .nav-bar li {
   font-family: 'Nunito Sans';
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .nav-bar a {
@@ -396,7 +403,7 @@ hr {
 .project-head {
   color: #629584;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: 'Nunito Sans';
 }
 
@@ -591,6 +598,239 @@ margin-top: 2rem;
 .edu-header{
   color: #629584;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: 'Nunito Sans';
+}
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+  margin-bottom: 4rem;
+}
+
+.edu-box {
+  background: linear-gradient(220.55deg, #61C695 0%, #133114 100%);
+  font-family: 'Nunito Sans';
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edu-box.left {
+  align-self: flex-start;
+}
+
+.edu-box.right {
+  align-self: flex-end;
+}
+
+/* Add a connecting line */
+.education-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+.edu-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #629584;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.edu-box.left::before {
+  right: -12px;
+  transform: translateY(-50%);
+}
+
+.edu-box.right::before {
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.edu-line{
+  margin-top: 2rem;
+}
+
+.about-header {
+  color: #629584;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Nunito Sans';
+}
+
+.about-image {
+  width: 31.25rem; /* Ensure a square container */
+  height: 31.25rem;
+  border-radius: 50%;
+  overflow: hidden; /* Prevents image overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Adds spacing between image and text */
+  max-width: 80rem; /* Adjust based on your layout */
+  margin: 0 auto; /* Centers the section */
+  padding: 2rem;
+}
+
+
+.about-text {
+  flex: 1; /* Makes the text fill remaining space */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  padding-left: 2rem;
+}
+
+.contact-me {
+  color: #629584;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Nunito Sans';
+  margin-left: 2.5rem;
+}
+
+/* Contact Form Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #243642; /* Set background color for the container */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #629584;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px; /* Limiting the form width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #629584;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 5rem;
+  background-color: #629584; /* Dark background color */
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100vw;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #629584; /* Change link color on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .social-links {
+    margin-top: 15px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+  }
 }

@@ -8,8 +8,9 @@ import Car from './assets/car.png'
 import Hiro from './assets/Hiro.png'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Spline from '@splinetool/react-spline';
-import FadeIn from './FadeIn';
+import FadeIn from './FadeIn.jsx';
 import './App.css'
+import about from './assets/men.jpeg';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -38,7 +39,7 @@ function App() {
           <ul>
             <li><a href='#projects' onClick={() => setIsNavOpen(false)}>Projects</a></li>
             <li><a href='#education' onClick={() => setIsNavOpen(false)}>Education</a></li>
-            <li><a href='#contact' onClick={() => setIsNavOpen(false)}>Contact Me</a></li>
+            <li><a href='#about' onClick={() => setIsNavOpen(false)}>About Me</a></li>
           </ul>
         </nav>
       </div>
@@ -50,13 +51,18 @@ function App() {
           {/* Hero Text with Social Icons and Button */}
           
           <div className='Hero'>
-          <FadeIn duration={500}>
             <div className="hero-text">
-            <p className='firstHero'>Frontend Dev</p>
-            <p className='secondHero'>Backend Dev</p>
+            <FadeIn duration={400}>
+            <p className='firstHero'>Web Developer</p>
+            </FadeIn>
+            <FadeIn duration={500}>
+            <p className='secondHero'>Problem Solver</p>
+            </FadeIn>
+            <FadeIn duration={600}>
             <p className='thirdHero'>Bug Hunter</p>
+            </FadeIn>
           </div>
-          </FadeIn>
+          
           
             
           <FadeIn duration={700}> 
@@ -94,8 +100,8 @@ function App() {
 
       {/* Projects */}
 
-      <div className='project-head'>
-      <FadeIn duration={700}>
+      <div className='project-head' id='projects'>
+      <FadeIn duration={400}>
         <p>Projects</p>
         </FadeIn>
       </div>
@@ -108,7 +114,7 @@ function App() {
         </div>
 
         <div className='project-desc-car'>
-        <FadeIn duration={700}>
+        <FadeIn duration={600}>
           <a className='car-title' href='https://24-7-cars.vercel.app/'>24/7 Cars</a>
           <p className='car-desc'>This application is a social media community designed for car enthusiasts to connect, share, and engage with others who share their passion for automobiles. Users can showcase their own virtual garage, post pictures and details about their cars, join or create communities based on specific car interests, and organize or discover car meets, events, and shows. The platform fosters interaction through posts, comments, and likes, creating an engaging space for automotive lovers.</p>
             </FadeIn>
@@ -135,7 +141,7 @@ function App() {
         </div>
 
         <div className='project-desc-hiro'>
-        <FadeIn duration={700}>
+        <FadeIn duration={600}>
           <p className='hiro-title'>Hiro</p>
           <p className='hiro-desc'>Hiro is a job application platform designed to streamline the job search process by enabling users to mass-apply for jobs effortlessly. The app automates and simplifies job applications, helping users increase their chances of securing employment faster. With Hiro, users can upload their resumes, customise applications, track their job submissions, and receive updates all in one place.</p>
             </FadeIn>
@@ -162,9 +168,111 @@ function App() {
 
       {/* Education */}
 
-      <div className='edu-header'>
-        <p>Education</p>
-      </div>
+    <div className='edu-header'>
+    <FadeIn duration={300}>
+      <p>Education</p>
+      </FadeIn>
+    </div>
+
+
+      <div className="education-container">
+  <div className="edu-box left">
+  <FadeIn duration={300}>
+    <h3>Bachelor of Computer Science</h3>
+    <p>Deakin University (2022 - Present) <strong>Graduating End of 2025</strong></p>
+    <p>Focusing on programming, algorithms, AI, databases, and networking, with hands-on experience in team projects and industry applications.</p>
+  </FadeIn>
+  </div>
+
+  <div className="edu-box right">
+  <FadeIn duration={400}>
+    <h3>Agile Support Services</h3>
+    <p>2022 - Present</p>
+    <p>Managed device configuration, software deployment, and server maintenance for global clients, providing support, troubleshooting, and resolving service-related issues.</p>
+  </FadeIn>
+  </div>
+
+  <div className="edu-box left">
+  <FadeIn duration={500}>
+    <h3>Chisholm Cert 4 in IT</h3>
+    <p>Completed in 2021</p>
+    <p>Focusing on programming, databases, cybersecurity, and software testing, with hands-on experience in version control, UI development, and emerging technologies.</p>
+  </FadeIn>
+  </div>
+
+  <div className="edu-box right">
+  <FadeIn duration={600}>
+    <h3>Year 11 Kambrya College</h3>
+    <p>Ended 2021</p>
+    <p>Completed Year 12 Computing with a 30 study score</p>
+  </FadeIn>
+  </div>
+</div>
+
+<hr className='edu-line'/>
+
+
+{/* About Me */}
+<div className='about-header'>
+  <FadeIn duration={400}>
+    <p>About Me</p>
+  </FadeIn>
+</div>
+
+<div className='about-container'>
+  <div className='about-image'>
+  <FadeIn duration={500}>
+    <img src={about} alt="About Me" />
+    </FadeIn>
+  </div>
+
+  <div className='about-text'>
+  <FadeIn duration={600}>
+    <p>I'm a Computer Science student at Deakin University, set to complete my degree at the end of this year. My passion for software engineering and web development has driven me to build projects that blend functionality with modern design.
+
+I started my web development journey by experimenting with HTML, CSS, and JavaScript, and over time, I’ve expanded my skills to include Node.js, React, Firebase, and more fullstack dev principles. Through both university coursework and personal projects, I’ve developed a strong foundation in front-end and back-end development.
+
+Currently, I’m working on 24/7 Cars, a car enthusiast social media service, where I’ve been implementing user authentication, database integration, and responsive design. My goal is to refine my skills further, build innovative web applications, and eventually step into the world of professional software engineering.</p>
+  </FadeIn>
+  </div>
+</div>
+
+<hr/>
+<div className='contact-container'>
+  <div className='contact-me'>
+  <FadeIn duration={300}>
+    <p>Contact Me</p>
+    </FadeIn>
+  </div>
+
+  <FadeIn duration={600}>
+  <form className="contact-form" action='https://formspree.io/f/mnnjwawq' method='POST'>
+    <label htmlFor="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+    <label htmlFor="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+    <label htmlFor="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  </FadeIn>
+</div>
+
+<footer className="footer">
+  <div className="footer-container">
+    <p>&copy; 2025 Patrick | All Rights Reserved</p>
+    <div className="social-links">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+
 
     </>
   )
