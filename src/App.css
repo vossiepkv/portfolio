@@ -678,8 +678,8 @@ margin-top: 2rem;
 }
 
 .about-image {
-  width: 31.25rem; /* Ensure a square container */
-  height: 31.25rem;
+  width: 25rem; /* Ensure a square container */
+  height: 25rem;
   border-radius: 50%;
   overflow: hidden; /* Prevents image overflow */
   display: flex;
@@ -706,7 +706,7 @@ margin-top: 2rem;
 
 .about-text {
   flex: 1; /* Makes the text fill remaining space */
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #fff;
   font-family: 'Nunito Sans';
