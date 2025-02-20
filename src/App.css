@@ -10,7 +10,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Header Styles */
@@ -34,7 +34,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 15rem;
+  width: 23rem;
 }
 
 .nav-bar ul {
