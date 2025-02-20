@@ -74,9 +74,9 @@ function App() {
           </FadeIn>
 
           <FadeIn duration={700}>
-            <link to ='#contact-me'>
+            <a href='#contact-me'>
             <button className="contact-btn animation-pulse">Contact Me</button>
-            </link>
+            </a>
             </FadeIn>
         </div>
 
