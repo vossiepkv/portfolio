@@ -39,7 +39,7 @@ function App() {
           <ul>
             <li><a href='#projects' onClick={() => setIsNavOpen(false)}>Projects</a></li>
             <li><a href='#education' onClick={() => setIsNavOpen(false)}>Education</a></li>
-            <li><a href='#contact-me' onClick={() => setIsNavOpen(false)}>About Me</a></li>
+            <li><a href='#about-me' onClick={() => setIsNavOpen(false)}>About Me</a></li>
           </ul>
         </nav>
       </div>
@@ -215,7 +215,7 @@ function App() {
 
 
 {/* About Me */}
-<div className='about-header'>
+<div className='about-header' id='about-me'>
   <FadeIn duration={400}>
     <p>About Me</p>
   </FadeIn>
