@@ -34,7 +34,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100vw;
+  width: 15rem;
 }
 
 .nav-bar ul {
