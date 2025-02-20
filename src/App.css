@@ -405,7 +405,7 @@ hr {
 .project-head {
   color: #629584;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Nunito Sans';
 }
 
@@ -421,8 +421,8 @@ hr {
 }
 
 .project-image-hiro img{
-height: 400px;
-width: 200px;
+height: 300px;
+width: 100px;
 padding-left: 20rem;
 margin-top: 2rem;
 
@@ -430,8 +430,8 @@ margin-top: 2rem;
 
 .project-image-car img {
   flex: 1;
-  height: 400px;
-  width: 700px;
+  height: 300px;
+  width: 600px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -448,7 +448,7 @@ margin-top: 2rem;
 
 .car-title {
   color: #629584;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Nunito Sans';
   margin: 0 !important;
   text-decoration: none;
@@ -458,7 +458,7 @@ margin-top: 2rem;
 
 .car-desc {
   color: #E2F1E7;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Nunito Sans';
   line-height: 1.6;
 }
@@ -513,7 +513,7 @@ margin-top: 2rem;
 
 .hiro-title {
   color: #629584;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Nunito Sans';
   margin: 0 !important;
   padding-left: 2rem;
@@ -521,10 +521,10 @@ margin-top: 2rem;
 
 .hiro-desc {
   color: #E2F1E7;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Nunito Sans';
   line-height: 1.6;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .project-image-hiro {
