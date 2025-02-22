@@ -11,6 +11,7 @@ import Spline from '@splinetool/react-spline';
 import FadeIn from './FadeIn.jsx';
 import './App.css'
 import about from './assets/men.jpeg';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
